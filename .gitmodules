@@ -1,0 +1,24 @@
+[submodule "client_model"]
+	path = client_model
+	url = git@github.com:prometheus/client_model.git
+[submodule "envoy"]
+	path = envoy
+	url = git@github.com:envoyproxy/envoy.git
+[submodule "opentelemetry-proto"]
+	path = opentelemetry-proto
+	url = git@github.com:open-telemetry/opentelemetry-proto.git
+[submodule "protoc-gen-validate"]
+	path = protoc-gen-validate
+	url = git@github.com:envoyproxy/protoc-gen-validate.git
+[submodule "googleapis"]
+	path = googleapis
+	url = git@github.com:googleapis/googleapis.git
+[submodule "opencensus-proto"]
+	path = opencensus-proto
+	url = git@github.com:census-instrumentation/opencensus-proto.git
+[submodule "udpa"]
+	path = udpa
+	url = git@github.com:cncf/udpa.git
+[submodule "protobuf"]
+	path = protobuf
+	url = git@github.com:protocolbuffers/protobuf.git
