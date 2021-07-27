@@ -1,0 +1,25 @@
+name: Haskell-CI
+on:
+  - push
+  - pull_request
+jobs:
+  linux:
+    name: Haskell-CI - Linux - ${{ matrix.compiler }}
+    runs-on: ubuntu-latest
+    container:
+      image: buildpack-deps:bionic
+    steps:
+      - name: apt
+        run: |
+          apt-get update
+          apt-get install --yes libgmp-dev protobuf-compiler
+          curl -sSL https://get.haskellstack.org/ | sh
+      - name: stack
+        run: |
+          mkdir -p ~/.stack
+          echo 'allow-different-user: yes' > ~/.stack/config.yaml
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: test
+        run: |
+          stack build
