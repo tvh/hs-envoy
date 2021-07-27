@@ -1,0 +1,12 @@
+resolver: lts-16.31
+
+packages:
+- .
+
+extra-deps:
+- git: https://github.com/k-bx/protocol-buffers.git
+  commit: 420237f43e12ba3a9713e5d10401f6423afbf580
+  subdirs:
+    - '.'
+    - 'hprotoc'
+    - 'descriptor'
