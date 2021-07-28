@@ -1,0 +1,132 @@
+{- This file was auto-generated from envoy/extensions/filters/udp/udp_proxy/v3/udp_proxy.proto by the proto-lens-protoc program. -}
+{-# LANGUAGE ScopedTypeVariables, DataKinds, TypeFamilies, UndecidableInstances, GeneralizedNewtypeDeriving, MultiParamTypeClasses, FlexibleContexts, FlexibleInstances, PatternSynonyms, MagicHash, NoImplicitPrelude, DataKinds, BangPatterns, TypeApplications, OverloadedStrings, DerivingStrategies#-}
+{-# OPTIONS_GHC -Wno-unused-imports#-}
+{-# OPTIONS_GHC -Wno-duplicate-exports#-}
+{-# OPTIONS_GHC -Wno-dodgy-exports#-}
+module Proto.Envoy.Extensions.Filters.Udp.UdpProxy.V3.UdpProxy_Fields where
+import qualified Data.ProtoLens.Runtime.Prelude as Prelude
+import qualified Data.ProtoLens.Runtime.Data.Int as Data.Int
+import qualified Data.ProtoLens.Runtime.Data.Monoid as Data.Monoid
+import qualified Data.ProtoLens.Runtime.Data.Word as Data.Word
+import qualified Data.ProtoLens.Runtime.Data.ProtoLens as Data.ProtoLens
+import qualified Data.ProtoLens.Runtime.Data.ProtoLens.Encoding.Bytes as Data.ProtoLens.Encoding.Bytes
+import qualified Data.ProtoLens.Runtime.Data.ProtoLens.Encoding.Growing as Data.ProtoLens.Encoding.Growing
+import qualified Data.ProtoLens.Runtime.Data.ProtoLens.Encoding.Parser.Unsafe as Data.ProtoLens.Encoding.Parser.Unsafe
+import qualified Data.ProtoLens.Runtime.Data.ProtoLens.Encoding.Wire as Data.ProtoLens.Encoding.Wire
+import qualified Data.ProtoLens.Runtime.Data.ProtoLens.Field as Data.ProtoLens.Field
+import qualified Data.ProtoLens.Runtime.Data.ProtoLens.Message.Enum as Data.ProtoLens.Message.Enum
+import qualified Data.ProtoLens.Runtime.Data.ProtoLens.Service.Types as Data.ProtoLens.Service.Types
+import qualified Data.ProtoLens.Runtime.Lens.Family2 as Lens.Family2
+import qualified Data.ProtoLens.Runtime.Lens.Family2.Unchecked as Lens.Family2.Unchecked
+import qualified Data.ProtoLens.Runtime.Data.Text as Data.Text
+import qualified Data.ProtoLens.Runtime.Data.Map as Data.Map
+import qualified Data.ProtoLens.Runtime.Data.ByteString as Data.ByteString
+import qualified Data.ProtoLens.Runtime.Data.ByteString.Char8 as Data.ByteString.Char8
+import qualified Data.ProtoLens.Runtime.Data.Text.Encoding as Data.Text.Encoding
+import qualified Data.ProtoLens.Runtime.Data.Vector as Data.Vector
+import qualified Data.ProtoLens.Runtime.Data.Vector.Generic as Data.Vector.Generic
+import qualified Data.ProtoLens.Runtime.Data.Vector.Unboxed as Data.Vector.Unboxed
+import qualified Data.ProtoLens.Runtime.Text.Read as Text.Read
+import qualified Proto.Envoy.Config.Core.V3.UdpSocketConfig
+import qualified Proto.Google.Protobuf.Duration
+import qualified Proto.Udpa.Annotations.Status
+import qualified Proto.Udpa.Annotations.Versioning
+import qualified Proto.Validate.Validate
+cluster ::
+  forall f s a.
+  (Prelude.Functor f, Data.ProtoLens.Field.HasField s "cluster" a) =>
+  Lens.Family2.LensLike' f s a
+cluster = Data.ProtoLens.Field.field @"cluster"
+hashPolicies ::
+  forall f s a.
+  (Prelude.Functor f,
+   Data.ProtoLens.Field.HasField s "hashPolicies" a) =>
+  Lens.Family2.LensLike' f s a
+hashPolicies = Data.ProtoLens.Field.field @"hashPolicies"
+idleTimeout ::
+  forall f s a.
+  (Prelude.Functor f,
+   Data.ProtoLens.Field.HasField s "idleTimeout" a) =>
+  Lens.Family2.LensLike' f s a
+idleTimeout = Data.ProtoLens.Field.field @"idleTimeout"
+key ::
+  forall f s a.
+  (Prelude.Functor f, Data.ProtoLens.Field.HasField s "key" a) =>
+  Lens.Family2.LensLike' f s a
+key = Data.ProtoLens.Field.field @"key"
+maybe'cluster ::
+  forall f s a.
+  (Prelude.Functor f,
+   Data.ProtoLens.Field.HasField s "maybe'cluster" a) =>
+  Lens.Family2.LensLike' f s a
+maybe'cluster = Data.ProtoLens.Field.field @"maybe'cluster"
+maybe'idleTimeout ::
+  forall f s a.
+  (Prelude.Functor f,
+   Data.ProtoLens.Field.HasField s "maybe'idleTimeout" a) =>
+  Lens.Family2.LensLike' f s a
+maybe'idleTimeout = Data.ProtoLens.Field.field @"maybe'idleTimeout"
+maybe'key ::
+  forall f s a.
+  (Prelude.Functor f,
+   Data.ProtoLens.Field.HasField s "maybe'key" a) =>
+  Lens.Family2.LensLike' f s a
+maybe'key = Data.ProtoLens.Field.field @"maybe'key"
+maybe'policySpecifier ::
+  forall f s a.
+  (Prelude.Functor f,
+   Data.ProtoLens.Field.HasField s "maybe'policySpecifier" a) =>
+  Lens.Family2.LensLike' f s a
+maybe'policySpecifier
+  = Data.ProtoLens.Field.field @"maybe'policySpecifier"
+maybe'routeSpecifier ::
+  forall f s a.
+  (Prelude.Functor f,
+   Data.ProtoLens.Field.HasField s "maybe'routeSpecifier" a) =>
+  Lens.Family2.LensLike' f s a
+maybe'routeSpecifier
+  = Data.ProtoLens.Field.field @"maybe'routeSpecifier"
+maybe'sourceIp ::
+  forall f s a.
+  (Prelude.Functor f,
+   Data.ProtoLens.Field.HasField s "maybe'sourceIp" a) =>
+  Lens.Family2.LensLike' f s a
+maybe'sourceIp = Data.ProtoLens.Field.field @"maybe'sourceIp"
+maybe'upstreamSocketConfig ::
+  forall f s a.
+  (Prelude.Functor f,
+   Data.ProtoLens.Field.HasField s "maybe'upstreamSocketConfig" a) =>
+  Lens.Family2.LensLike' f s a
+maybe'upstreamSocketConfig
+  = Data.ProtoLens.Field.field @"maybe'upstreamSocketConfig"
+sourceIp ::
+  forall f s a.
+  (Prelude.Functor f,
+   Data.ProtoLens.Field.HasField s "sourceIp" a) =>
+  Lens.Family2.LensLike' f s a
+sourceIp = Data.ProtoLens.Field.field @"sourceIp"
+statPrefix ::
+  forall f s a.
+  (Prelude.Functor f,
+   Data.ProtoLens.Field.HasField s "statPrefix" a) =>
+  Lens.Family2.LensLike' f s a
+statPrefix = Data.ProtoLens.Field.field @"statPrefix"
+upstreamSocketConfig ::
+  forall f s a.
+  (Prelude.Functor f,
+   Data.ProtoLens.Field.HasField s "upstreamSocketConfig" a) =>
+  Lens.Family2.LensLike' f s a
+upstreamSocketConfig
+  = Data.ProtoLens.Field.field @"upstreamSocketConfig"
+useOriginalSrcIp ::
+  forall f s a.
+  (Prelude.Functor f,
+   Data.ProtoLens.Field.HasField s "useOriginalSrcIp" a) =>
+  Lens.Family2.LensLike' f s a
+useOriginalSrcIp = Data.ProtoLens.Field.field @"useOriginalSrcIp"
+vec'hashPolicies ::
+  forall f s a.
+  (Prelude.Functor f,
+   Data.ProtoLens.Field.HasField s "vec'hashPolicies" a) =>
+  Lens.Family2.LensLike' f s a
+vec'hashPolicies = Data.ProtoLens.Field.field @"vec'hashPolicies"
